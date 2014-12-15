@@ -1,13 +1,17 @@
 <?php
-//関数
-//ceil / floor / round /pi /rand
- $x = 5.2;
-/*
-echo ceil($x);
-echo floor($x);
-echo round($x);
-*/
+//文字列に関する関数
 
-//echo pi();
 
-echo mt_rand(1,100);
+$s = "abcdefg";
+
+//strlen
+//echo strlen($s);
+
+//strpos
+//echo strapos($s,"c");
+
+//substr
+//echo substr($s,-2,2);
+
+//str_replace
+echo str_replace("abc","ABC",$s);
