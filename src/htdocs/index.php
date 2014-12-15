@@ -11,3 +11,5 @@ unset($youbi[2]);
 
 var_dump($youbi);
 
+/////git diffを確認します。
+/////さらにgit diffを確認します。
