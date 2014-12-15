@@ -11,4 +11,4 @@ unset($youbi[2]);
 
 var_dump($youbi);
 
-?>aaaaaaaa
+//addを追加しました。
