@@ -3,10 +3,21 @@
 
 //定数：変更不可
 
-define ("ADMIN_EMAIL","t_nakajima@bbmedia.co.jp");
+//代入演算子
+$x = 5;
 
-define ("LIST_COUNT",15);
+//数値に関するもの　+-*/%
 
-echo ADMIN_EMAIL;
+//文字列の連結演算子
 
+echo "hello" . "world";
+
+//単項演算子
+$x++;//$x = $x + 1;
+++$x;
+
+$x += 5; // $x = $x + 5;
+$x *= 5; // $x = $x * 5;
+
+echo $x;
 
