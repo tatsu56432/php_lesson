@@ -1,21 +1,13 @@
 <?php
-//ループ（while）
-$i=0;
-//ループ(for/while)
+//配列
 
-//break; continue;
-/*
-for($i=0 ; $i < 10 ; $i++ ){
-    if($i>5){
-        break;
-    }
-echo $i;
-}
-*/
+$youbi = array("Sun","Mon","Tue","Wed","Thu","Fri","Sut");
 
-for($i = 0 ; $i < 10 ; $i++){
-    if($i % 2 == 0){
-        continue;
-    }
-    echo $i;
-}
+//echo $youbi[2];
+
+$youbi[]="追加";
+$youbi[0]="Sunday";
+unset($youbi[2]);
+
+var_dump($youbi);
+
