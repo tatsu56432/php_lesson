@@ -1,17 +1,17 @@
 <?php
 //文字列に関する関数
+//日本語に対応させる
 
-
-$s = "abcdefg";
+$s = "あいうえお";
 
 //strlen
-//echo strlen($s);
+//echo mb_strlen($s);
 
 //strpos
-//echo strapos($s,"c");
+//echo mb_strapos($s,"う");
 
 //substr
-//echo substr($s,-2,2);
+echo mb_substr($s,-2,2);
 
 //str_replace
-echo str_replace("abc","ABC",$s);
+//echo str_replace("abc","ABC",$s);
