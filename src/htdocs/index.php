@@ -1,13 +1,19 @@
 <?php
-//連想配列
+//配列に関するループ
 
-$sales = array("tanaka" =>150,"nakajima"=>200);
-//echo $youbi[2];
+$youbi = array("Sun","Mon","Tue",);
+$sales = array("tanaka"=>150,"nakajima"=>200);
 
-echo $sales["nakajima"];
-$sales[]="taguti";
-$sales[0]="Sunday";
-//unset($sales[1]);
+//foreach
 
-var_dump($youbi);
+/*
+foreach($youbi as $y){
+    echo $y;
+}
+*/
 
+foreach($sales as $name => $mount){
+    echo $name, $mount;
+
+    
+}
