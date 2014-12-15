@@ -1,13 +1,13 @@
 <?php
 //関数
-//ローカル変数(変数のスコープ)
-$myname = "ruby";
+//ceil / floor / round /pi /rand
+ $x = 5.2;
+/*
+echo ceil($x);
+echo floor($x);
+echo round($x);
+*/
 
-function sayHi($name="sakuragi"){
-    $myname = "php";
-    return "hi!$name from $myname";
-}
+//echo pi();
 
-echo sayHi();
-
-echo $myname;
+echo mt_rand(1,100);
