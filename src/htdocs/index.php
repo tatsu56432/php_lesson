@@ -1,15 +1,28 @@
 <?php
 
-//日付や時間に関する関数
+//ファイルの読み書き
 
-//Unixタイムスタンプ
+$testFile = "test.dat";
+$contents = "怒涛のコンツェルト";
 
-var_dump(time());
-
-var_dump(mktime(20,00,0,12,15,2014));// 2014/12/15 20:00:00
-var_dump(strtotime("2014/12/15 20:00:00"));
-var_dump(strtotime("last Sunday"));
-var_dump(strtotime("+2 days"));
-var_dump(strtotime("2014/12/17 19:32:00"));
+if (is_writable($testFile)){
+    //ファイルをオープンできたか？
+    //$fp = fopen($testFile,"a");
+    if(!$fp = fopen($testFile,"a")){
+        echo"could not open!";
+        exit;
+    }
+    //書き込めたか？
+   if (fwrite($fp,$contents)===false){
+       echo"could not write!";
+       exit;
+   }
+    //終了処理
+    echo "success!";
+    fclose($fp);
+}else{
+    echo"not writable!";
+    exit;
+}
 
 
