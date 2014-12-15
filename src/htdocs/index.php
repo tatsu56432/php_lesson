@@ -1,15 +1,15 @@
 <?php
-//文字列に関する関数
-//printf
 
-$s = "banana";
-$n = 40;
-$p = 5.23;
+//日付や時間に関する関数
 
-//"We have  40 bananas for $5.23"
+//Unixタイムスタンプ
 
-//printf("We have %5d %ss for $%.2f",$n,$s,$p);
+var_dump(time());
 
-$result = sprintf("We have %5d %ss for $%.2f",$n,$s,$p);
+var_dump(mktime(20,00,0,12,15,2014));// 2014/12/15 20:00:00
+var_dump(strtotime("2014/12/15 20:00:00"));
+var_dump(strtotime("last Sunday"));
+var_dump(strtotime("+2 days"));
+var_dump(strtotime("2014/12/17 19:32:00"));
 
-echo $result;
+
