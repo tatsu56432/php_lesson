@@ -1,19 +1,12 @@
 <?php
-//配列に関するループ
+//関数
 
-$youbi = array("Sun","Mon","Tue",);
-$sales = array("tanaka"=>150,"nakajima"=>200);
+//引数
+//戻り値
 
-//foreach
-
-/*
-foreach($youbi as $y){
-    echo $y;
+function sayHi($name="sakuragi"){
+    return "Hi! $name";
 }
-*/
 
-foreach($sales as $name => $mount){
-    echo $name, $mount;
-
-    
-}
+echo sayHi();
+sayHi("tanaka");
