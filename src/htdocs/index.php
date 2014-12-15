@@ -1,14 +1,19 @@
 <?php
-//条件分岐
-//比較演算子　<> <= => == !=
-// &&(AND) ||(OR) !(NOT)
-$age = 10;
-/*
-if($age > 20 ){
-    $message = "大人！";
-}else{
-    $message = "子供！";
+//条件分岐(switch)
+
+$signal = "yellow";
+
+switch($signal) {
+    case"red":
+        echo "止まれ！";
+        break;
+    case"blue":
+        echo "進め！";
+        break;
+    case"yellow":
+        echo "注意！";
+        break;
+    default;
+        //例外処理
+        break;
 }
-*/
-$message = ($age > 20) ? "大人！":"子供！";//条件が真だったら左を、偽だったら右を返す。
-echo $message;
