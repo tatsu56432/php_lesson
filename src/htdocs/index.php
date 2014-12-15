@@ -1,14 +1,13 @@
 <?php
-//配列
+//連想配列
 
-$youbi = array("Sun","Mon","Tue","Wed","Thu","Fri","Sut");
-
+$sales = array("tanaka" =>150,"nakajima"=>200);
 //echo $youbi[2];
 
-$youbi[]="追加";
-$youbi[0]="Sunday";
-unset($youbi[2]);
+echo $sales["nakajima"];
+$sales[]="taguti";
+$sales[0]="Sunday";
+//unset($sales[1]);
 
 var_dump($youbi);
 
-//addを追加しました。
