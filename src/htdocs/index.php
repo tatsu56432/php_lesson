@@ -4,13 +4,10 @@
 
 $testFile = "test.dat";
 
-if (!$fp = fopen($testFile,"r")){
-    echo "could not open";
-    exit;
-}
+//$contents = file_get_contents($testFile);
 
-$contents = fread($fp,filesize($testFile));
+//$contents = file_get_contents("http://dotinstall.com");
+
+$contents = file($testFile);
 
 var_dump($contents);
-
-fclose($fp);
