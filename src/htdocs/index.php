@@ -1,17 +1,15 @@
 <?php
 //文字列に関する関数
-//日本語に対応させる
+//printf
 
-$s = "あいうえお";
+$s = "banana";
+$n = 40;
+$p = 5.23;
 
-//strlen
-//echo mb_strlen($s);
+//"We have  40 bananas for $5.23"
 
-//strpos
-//echo mb_strapos($s,"う");
+//printf("We have %5d %ss for $%.2f",$n,$s,$p);
 
-//substr
-echo mb_substr($s,-2,2);
+$result = sprintf("We have %5d %ss for $%.2f",$n,$s,$p);
 
-//str_replace
-//echo str_replace("abc","ABC",$s);
+echo $result;
