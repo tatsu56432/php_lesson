@@ -1,12 +1,13 @@
 <?php
 //関数
-
-//引数
-//戻り値
+//ローカル変数(変数のスコープ)
+$myname = "ruby";
 
 function sayHi($name="sakuragi"){
-    return "Hi! $name";
+    $myname = "php";
+    return "hi!$name from $myname";
 }
 
 echo sayHi();
-sayHi("tanaka");
+
+echo $myname;
